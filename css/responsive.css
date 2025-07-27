@@ -1,0 +1,31 @@
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #fh5co-header {
+        background-size: cover !important;
+        background-position: center center !important;
+        height: 100vh !important;
+    }
+    .fh5co-nav .menu-1 {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .event-wrap iframe {
+        width: 100% !important;
+        max-width: 400px !important;
+    }
+    #fh5co-services iframe {
+        width: 100% !important;
+        max-width: 640px !important;
+        height: 1000px !important;
+    }
+    .flipTimebox {
+        transform: scale(0.7) !important;
+    }
+    h1 {
+        font-size: 36px !important;
+    }
+    h2 {
+        font-size: 24px !important;
+    }
+}
