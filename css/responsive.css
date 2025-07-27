@@ -10,7 +10,7 @@
     margin: 0 auto;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
 }
 
 /* Responsive styles */
