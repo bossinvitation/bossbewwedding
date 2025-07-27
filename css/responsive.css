@@ -9,7 +9,7 @@
 .clock {
     margin: 0 auto;
     position: relative;
-    left: 40%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
