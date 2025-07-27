@@ -1,3 +1,18 @@
+/* Common styles */
+.flipTimebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.clock {
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     #fh5co-header {
