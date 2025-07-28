@@ -40,7 +40,7 @@
     #fh5co-counter .display-tc,
     .fh5co-cover .display-tc {
         vertical-align: initial !important;
-        padding-top: 0 !important;
+        padding-top: 50px !important;
     }
     #fh5co-header {
         background-size: cover !important;
