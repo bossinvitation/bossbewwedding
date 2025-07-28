@@ -15,6 +15,12 @@
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+    #fh5co-header .display-tc,
+    #fh5co-counter .display-tc,
+    .fh5co-cover .display-tc {
+        vertical-align: initial !important;
+        padding-top: 0 !important;
+    }
     #fh5co-header {
         background-size: cover !important;
         background-position: center center !important;

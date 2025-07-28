@@ -11,13 +11,17 @@
 * 	Template Style 
 *
 * ======================================================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
-  background: #fff;
+  background: #f5f5f5;
 }
 
 #page {
@@ -302,13 +306,17 @@ h2 {
 }
 
 .fh5co-cover {
-  height: 800px;
+  min-height: 100vh;
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .fh5co-cover .overlay {
   z-index: 0;
   position: absolute;
@@ -318,13 +326,42 @@ h2 {
   right: 0;
   background: rgba(147, 147, 147, 0.5);
 }
+
 .fh5co-cover > .fh5co-container {
   position: relative;
   z-index: 10;
+  width: 100%;
+  padding: 0 15px;
 }
-@media screen and (min-width: 1920px) {
+
+@media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 100vh;
+    padding: 3em 0;
+  }
+  .fh5co-cover h1 {
+    font-size: 2.5em !important;
+  }
+  .fh5co-cover h2 {
+    font-size: 1.8em !important;
+  }
+  .fh5co-cover img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fh5co-cover {
+    padding: 2em 0;
+  }
+  .fh5co-cover h1 {
+    font-size: 2em !important;
+  }
+  .fh5co-cover h2 {
+    font-size: 1.5em !important;
+  }
+  .fh5co-cover img {
+    max-width: 90%;
   }
 }
 .fh5co-cover .display-t,
@@ -433,6 +470,8 @@ h2 {
   padding-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
   font-family: Sofia Sans Condensed;
   font-size: 25px;
 }
@@ -454,6 +493,15 @@ h2 {
   width: 50%;
   float: left;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+#fh5co-event .event-wrap .event-col i {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 #fh5co-counter {
@@ -838,7 +886,7 @@ form label {
 .fh5co-cover .display-tc {
   display: table-cell !important;
   vertical-align: middle;
-  padding-top: 130px;
+  padding-top: 100px;
 }
 #fh5co-header .display-tc h1, #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h1,
@@ -982,7 +1030,7 @@ form label {
 }
 
 .fh5co-section-gray {
-  background: rgba(0, 0, 0, 0.04);
+  background: #f5f5f5;
 }
 
 .couple-wrap {

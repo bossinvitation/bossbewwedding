@@ -2,6 +2,23 @@
 	
 	'use strict';
 
+	// Smooth scrolling for all anchor links
+	var smoothScroll = function() {
+		$('a[href*="#"]:not([href="#"])').click(function(e) {
+			if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+				e.preventDefault();
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top - 70 // Offset for fixed header
+					}, 1000, 'easeInOutExpo');
+					return false;
+				}
+			}
+		});
+	};
+
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
